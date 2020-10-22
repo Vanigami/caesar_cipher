@@ -1,7 +1,11 @@
-def caesar_cipher(string, shift =1)
-  alphabet = ('a'..'z').to_a
+def caesar_cipher(string, shift =1) #default shift of 1 
+  #turn alphabet into array
+  alphabet = ('a'..'z').to_a 
+  encrypt = alphabet.rotate(shift)
+  puts encrypt
 end
 
+caesar_cipher("hello")
 
 
 
